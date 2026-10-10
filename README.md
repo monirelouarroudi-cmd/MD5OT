@@ -110,62 +110,6 @@ def mystere():
 **f.** Écrire en Python la condition à placer dans le `if` pour que la fonction compte tous les codes dont les trois chiffres sont distincts. Quelle valeur renvoie alors la fonction ?
 
 ---
-
-### Exercice 3 — Formule de Leibniz *(3 points)*
-
-Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2e^{-x}$.
-
-**a.** Donner, pour tout entier $j$, la dérivée $j$-ième de $x\mapsto e^{-x}$ (sans démonstration).
-
-**b.** À l'aide de la formule de Leibniz, démontrer que, pour tout entier $n\geqslant2$,
-$$f^{(n)}(x)=(-1)^n\,e^{-x}\Big(x^2-2nx+n(n-1)\Big).$$
-
-**c.** Vérifier que la formule est aussi vraie pour $n=1$, par un calcul direct de $f'$.
-
-**d.** Calculer $f^{(10)}(0)$.
-
----
-
-### Exercice 4 — Lire sur un pavé *(3 points)*
-
-$ABCDEFGH$ est un pavé droit avec $AB=6$, $AD=4$ et $AE=2$ (base $ABCD$, $E$ au-dessus de $A$, $F$ au-dessus de $B$, $G$ au-dessus de $C$, $H$ au-dessus de $D$). On le rapporte au repère orthonormé d'origine $A$ dont les axes portent $(AB)$, $(AD)$, $(AE)$.
-
-**a.** Donner les coordonnées de $C$, $F$, $G$ et $H$.
-
-**b.** $I$ est le milieu de $[EH]$ et $J$ celui de $[BC]$. Calculer leurs coordonnées et montrer que $(IJ)$ est parallèle à $(BE)$.
-
-**c.** $K$ est le point tel que $\overrightarrow{AK}=\dfrac12\overrightarrow{AG}$. Démontrer que $K$ est le milieu de $[IJ]$.
-
----
-
-### Exercice 5 — Problème : un robot *(6 points)*
-
-Dans un repère $(O;\vec\imath,\vec\jmath,\vec k)$, un robot part de $O(0;0;0)$ et avance **par pas** : chaque pas est une translation de vecteur $\vec\imath$, $\vec\jmath$ ou $\vec k$. Il doit rejoindre $P(3;2;1)$. Un chemin est noté par la liste de ses pas ; par exemple $\vec\imath\,\vec\imath\,\vec\jmath\,\vec k\,\vec\imath\,\vec\jmath$.
-
-#### Partie A — géométrie
-
-**a.** Justifier qu'après un chemin comportant $a$ pas $\vec\imath$, $b$ pas $\vec\jmath$ et $c$ pas $\vec k$, le robot est au point $(a;b;c)$. Combien de pas de chaque sorte comporte un chemin de $O$ à $P$ ?
-
-**b.** Après trois pas, le robot peut être en $R(3;0;0)$, $S(0;3;0)$, $T(0;0;3)$, $M(2;1;0)$, $N(0;2;1)$ ou $L(1;0;2)$. Démontrer que $R$, $S$, $T$ ne sont pas alignés, puis que $M$, $N$ et $L$ appartiennent au plan $(RST)$.
-
-#### Partie B — dénombrement
-
-**a.** Combien de chemins mènent de $O$ à $P$ ? (On pourra choisir d'abord la place des pas $\vec\imath$, puis celle des pas $\vec\jmath$.)
-
-**b.** Combien de ces chemins passent par le point $Q(1;1;1)$ ?
-
-**c.** Combien l'évitent ?
-
-**d.** Combien de chemins passent par le point $U(2;0;1)$ ?
-
-> 🌟 **Question bonus (non notée).** Un chemin peut-il passer à la fois par $Q$ et par $U$ ? Justifier.
-
----
----
-
-## ✅ Corrigé détaillé
-
-
 <details>
 <summary><b>Corrigé de l'exercice 2</b> — Un programme à déchiffrer (5 points)</summary>
 
@@ -208,6 +152,20 @@ La fonction renvoie alors $\boxed{720}$.
 
 </details>
 
+### Exercice 3 — Formule de Leibniz *(3 points)*
+
+Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2e^{-x}$.
+
+**a.** Donner, pour tout entier $j$, la dérivée $j$-ième de $x\mapsto e^{-x}$ (sans démonstration).
+
+**b.** À l'aide de la formule de Leibniz, démontrer que, pour tout entier $n\geqslant2$,
+$$f^{(n)}(x)=(-1)^n\,e^{-x}\Big(x^2-2nx+n(n-1)\Big).$$
+
+**c.** Vérifier que la formule est aussi vraie pour $n=1$, par un calcul direct de $f'$.
+
+**d.** Calculer $f^{(10)}(0)$.
+
+---
 <details>
 <summary><b>Corrigé de l'exercice 3</b> — Formule de Leibniz (3 points)</summary>
 
@@ -235,7 +193,17 @@ La formule pour $n=1$ donne $(-1)^1e^{-x}\big(x^2-2x+1\times0\big)=-e^{-x}(x^2-2
 $$f^{(10)}(0)=(-1)^{10}e^{0}\big(0-0+10\times9\big)=\boxed{90}$$
 
 </details>
+### Exercice 4 — Lire sur un pavé *(3 points)*
 
+$ABCDEFGH$ est un pavé droit avec $AB=6$, $AD=4$ et $AE=2$ (base $ABCD$, $E$ au-dessus de $A$, $F$ au-dessus de $B$, $G$ au-dessus de $C$, $H$ au-dessus de $D$). On le rapporte au repère orthonormé d'origine $A$ dont les axes portent $(AB)$, $(AD)$, $(AE)$.
+
+**a.** Donner les coordonnées de $C$, $F$, $G$ et $H$.
+
+**b.** $I$ est le milieu de $[EH]$ et $J$ celui de $[BC]$. Calculer leurs coordonnées et montrer que $(IJ)$ est parallèle à $(BE)$.
+
+**c.** $K$ est le point tel que $\overrightarrow{AK}=\dfrac12\overrightarrow{AG}$. Démontrer que $K$ est le milieu de $[IJ]$.
+
+---
 <details>
 <summary><b>Corrigé de l'exercice 4</b> — Lire sur un pavé (3 points)</summary>
 
@@ -260,7 +228,27 @@ $$\left(\frac{0+6}2\,;\,\frac{2+2}2\,;\,\frac{2+0}2\right)=(3;2;1)=K$$
 **$K$ est donc le milieu de $[IJ]$** (c'est aussi le centre du pavé).
 
 </details>
+### Exercice 5 — Problème : un robot *(6 points)*
 
+Dans un repère $(O;\vec\imath,\vec\jmath,\vec k)$, un robot part de $O(0;0;0)$ et avance **par pas** : chaque pas est une translation de vecteur $\vec\imath$, $\vec\jmath$ ou $\vec k$. Il doit rejoindre $P(3;2;1)$. Un chemin est noté par la liste de ses pas ; par exemple $\vec\imath\,\vec\imath\,\vec\jmath\,\vec k\,\vec\imath\,\vec\jmath$.
+
+#### Partie A — géométrie
+
+**a.** Justifier qu'après un chemin comportant $a$ pas $\vec\imath$, $b$ pas $\vec\jmath$ et $c$ pas $\vec k$, le robot est au point $(a;b;c)$. Combien de pas de chaque sorte comporte un chemin de $O$ à $P$ ?
+
+**b.** Après trois pas, le robot peut être en $R(3;0;0)$, $S(0;3;0)$, $T(0;0;3)$, $M(2;1;0)$, $N(0;2;1)$ ou $L(1;0;2)$. Démontrer que $R$, $S$, $T$ ne sont pas alignés, puis que $M$, $N$ et $L$ appartiennent au plan $(RST)$.
+
+#### Partie B — dénombrement
+
+**a.** Combien de chemins mènent de $O$ à $P$ ? (On pourra choisir d'abord la place des pas $\vec\imath$, puis celle des pas $\vec\jmath$.)
+
+**b.** Combien de ces chemins passent par le point $Q(1;1;1)$ ?
+
+**c.** Combien l'évitent ?
+
+**d.** Combien de chemins passent par le point $U(2;0;1)$ ?
+
+> 🌟 **Question bonus (non notée).** Un chemin peut-il passer à la fois par $Q$ et par $U$ ? Justifier.
 <details>
 <summary><b>Corrigé de l'exercice 5</b> — Problème : un robot (6 points)</summary>
 
@@ -313,6 +301,8 @@ $$3\times3=\boxed{9\text{ chemins}}$$
 **🌟 Bonus.** Non : $Q$ et $U$ sont deux points **distincts** atteints tous deux après exactement 3 pas. Le robot ne peut pas être en deux endroits différents au bout de 3 pas : aucun chemin ne passe par les deux (0 chemin).
 
 </details>
+---
+---
 
 ---
 
