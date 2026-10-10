@@ -51,6 +51,36 @@ $$\overrightarrow{BK}=\frac13\left(\overrightarrow{BA}+\overrightarrow{BC}+\over
 **c.** En déduire que $B$, $K$ et $H$ sont alignés, et préciser la position de $K$ sur $[BH]$.
 
 ---
+<details>
+<summary><b>Corrigé de l'exercice 1</b> — Un alignement dans le cube (3 points)</summary>
+
+**a. (1 pt)** D'après la relation de Chasles :
+
+$$\overrightarrow{KA}=\overrightarrow{KB}+\overrightarrow{BA},\qquad \overrightarrow{KC}=\overrightarrow{KB}+\overrightarrow{BC},\qquad \overrightarrow{KF}=\overrightarrow{KB}+\overrightarrow{BF}$$
+
+En additionnant et en utilisant l'hypothèse :
+
+$$3\overrightarrow{KB}+\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BF}=\vec0
+\ \Longrightarrow\ 3\overrightarrow{KB}=-\left(\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BF}\right)$$
+
+Comme $\overrightarrow{BK}=-\overrightarrow{KB}$ :
+
+$$\boxed{\overrightarrow{BK}=\frac13\left(\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BF}\right)}$$
+
+**b. (1 pt)** Par Chasles : $\overrightarrow{BH}=\overrightarrow{BA}+\overrightarrow{AD}+\overrightarrow{DH}$.
+
+- $ABCD$ est un carré, donc $\overrightarrow{AD}=\overrightarrow{BC}$ ;
+- les arêtes verticales du cube sont parallèles et de même longueur, donc $\overrightarrow{DH}=\overrightarrow{BF}$.
+
+$$\boxed{\overrightarrow{BH}=\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BF}}$$
+
+**c. (1 pt)** D'après a. et b. :
+
+$$\overrightarrow{BK}=\frac13\overrightarrow{BH}$$
+
+Les vecteurs $\overrightarrow{BK}$ et $\overrightarrow{BH}$ sont colinéaires : **$B$, $K$, $H$ sont alignés**. De plus, le coefficient $\frac13$ est dans $[0;1]$ : $K$ appartient au segment $[BH]$, **au tiers de sa longueur à partir de $B$** ($BK=\frac13BH$).
+
+</details>
 
 ### Exercice 2 — Un programme à déchiffrer *(5 points)*
 
@@ -135,36 +165,6 @@ Dans un repère $(O;\vec\imath,\vec\jmath,\vec k)$, un robot part de $O(0;0;0)$ 
 
 ## ✅ Corrigé détaillé
 
-<details>
-<summary><b>Corrigé de l'exercice 1</b> — Un alignement dans le cube (3 points)</summary>
-
-**a. (1 pt)** D'après la relation de Chasles :
-
-$$\overrightarrow{KA}=\overrightarrow{KB}+\overrightarrow{BA},\qquad \overrightarrow{KC}=\overrightarrow{KB}+\overrightarrow{BC},\qquad \overrightarrow{KF}=\overrightarrow{KB}+\overrightarrow{BF}$$
-
-En additionnant et en utilisant l'hypothèse :
-
-$$3\overrightarrow{KB}+\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BF}=\vec0
-\ \Longrightarrow\ 3\overrightarrow{KB}=-\left(\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BF}\right)$$
-
-Comme $\overrightarrow{BK}=-\overrightarrow{KB}$ :
-
-$$\boxed{\overrightarrow{BK}=\frac13\left(\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BF}\right)}$$
-
-**b. (1 pt)** Par Chasles : $\overrightarrow{BH}=\overrightarrow{BA}+\overrightarrow{AD}+\overrightarrow{DH}$.
-
-- $ABCD$ est un carré, donc $\overrightarrow{AD}=\overrightarrow{BC}$ ;
-- les arêtes verticales du cube sont parallèles et de même longueur, donc $\overrightarrow{DH}=\overrightarrow{BF}$.
-
-$$\boxed{\overrightarrow{BH}=\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BF}}$$
-
-**c. (1 pt)** D'après a. et b. :
-
-$$\overrightarrow{BK}=\frac13\overrightarrow{BH}$$
-
-Les vecteurs $\overrightarrow{BK}$ et $\overrightarrow{BH}$ sont colinéaires : **$B$, $K$, $H$ sont alignés**. De plus, le coefficient $\frac13$ est dans $[0;1]$ : $K$ appartient au segment $[BH]$, **au tiers de sa longueur à partir de $B$** ($BK=\frac13BH$).
-
-</details>
 
 <details>
 <summary><b>Corrigé de l'exercice 2</b> — Un programme à déchiffrer (5 points)</summary>
